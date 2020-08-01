@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <title>个人简介</title>
+
+    
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family:"Microsoft Yahei";
+        }
+        #abme{
+            margin-top: 5%;
+            transform: translateX(25%);
+            width: 700px;
+            height: 600px;
+            
+        }#abme p{
+            font-size: 24px;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        #abme h1{
+            padding: 0;
+            margin: 0;
+            font-size: 60px;
+            margin-top: 10px;
+        }
+        #abme h2 p{
+            font-size: 28px;
+            border-radius: 2px;
+            display: inline;
+            background: linear-gradient(to top, rgb(74, 223, 198) 0%,rgb(74, 223, 198),rgba(255, 255, 255, 0) 51%,rgba(255, 255, 255, 0) 100%);
+        }
+        #abme p a{
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            background: linear-gradient(to top, rgb(74, 223, 198) 0%,rgb(74, 223, 198),rgba(255, 255, 255, 0) 51%,rgba(255, 255, 255, 0) 100%);
+            transition: background-color 0.5s ease-in;
+        }
+        #abme p a:hover{
+            background-color: rgb(74, 223, 198);
+        }
+        #abme p a:last-child:hover::after{
+            content:'';
+            width:220px;
+            height:220px;
+            background: url("img/ewm.png")top center;
+            background-size:100% auto;
+            position:absolute;
+            top:550px;
+            left:300px;
+            z-index:99999;
+        }
+        
+
+        /* #abme h2 p:hover{
+            background-color: rgb(88, 222, 255);
+        } */
+        /* #abme h2{
+            font-family: 'ZCOOL XiaoWei', serif;
+        } */
+    </style>
+</head>
+<body>
+    <div id="abme">
+        <h1>你好。</h1>
+        <h2>我叫<p>叶忠湖</p></h2>
+        <p>我是一名前端开发人员，更是一名不断进取的学习者。我喜欢和我的朋友们一起开发有趣好玩的项目，也会沉浸在讨论技术的氛围中。<br><br>
+            我有一个<a href="https://yezhonghu0503.github.io/">博客</a>，我会有一些对技术浅显的见解记录在上面。同时您也可以在我的<a href="">GitHub</a>上看到我和朋友们
+            做的一些项目。<br><br>
+            如果您恰巧使用<a href="https://i.csdn.net/#/uc/profile">CSDN</a>或者<a href="">掘金</a>，我们也可以在这些地方碰头或是讨论技术。<br><br>
+            除此之外，我还是一个<a href="">前端学习小组</a>的组长，如果您对前端也有兴趣，欢迎您加入我们一起学习
+        </p>
+    </div>
+</body>
+</html>
